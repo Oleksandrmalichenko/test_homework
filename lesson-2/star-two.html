@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>star-two</title>
+</head>
+
+<body>
+    <h1>Дополнительное задание к уроку 2 - теги HTML5</h1>
+    <form id="my_form"
+        onsubmit="alert(decodeURI(new URLSearchParams(Array.from(new FormData(document.getElementById('my_form')))).toString()));return false;">
+        <fieldset>
+            <legend>Общие данные</legend><br>
+            <label for="name1">Заблокированое поле</label>
+            <input type="text" name="registration" id="name1" disabled value="Меня нельзя менять"><br><br>
+            <label for="name2">Какойто-то текс</label>
+            <input type="text" name="registration" id="name2" value="Меня только читать"><br><br>
+            <label for="name3">Имя питомцы</label>
+            <input type="text" name="registration" id="name3" value="Розовый слон"><br><br>
+            <label for="email">Ваш имеил</label>
+            <input type="email" name="registration_email" id="email" value="ivnnrkdom.gmai"><br><br>
+            <label for="password">Секретный пароль</label>
+            <input type="password" name="registration_password" id="password"><br><br>
+            <label for="birth">Дата рождения Пушкина А.С.</label>
+            <input type="date" name="dataBirth" id="birth"><br><br>
+            <label for="wood">Возраст дерева возле дома</label>
+            <input type="number" name="timewood" id="wood"><br><br>
+            <label>Ваше наполное покрытие</label>
+            <input type="radio" name="material" id="material1">
+            <label for="material1">Паркет</label>
+            <input type="radio" name="material" id="material2">
+            <label for="material2">Ламинат</label>
+            <input type="radio" name="material" id="material3">
+            <label for="material3">Ковролин</label><br><br>
+            <label>Соцыальная сеть</label>
+            <input type="checkbox" name="social-network" id="network1">
+            <label for="network1">Фейсбук</label>
+            <input type="checkbox" name="social-network" id="network2">
+            <label for="network2">Однокласники</label>
+            <input type="checkbox" name="social-network" id="network3">
+            <label for="network3">Контак</label>
+            <input type="checkbox" name="social-network" id="network4">
+            <label for="network4">Инстаграм</label><br><br>
+        </fieldset><br><br>
+        <fieldset>
+            <legend>Другая информацыя</legend><br>
+            <label for="color">Заблокированое поле</label>
+            <input type="color" name="Colour" id="color"><br><br>
+            <label for="tel">Телефон поддержки front-end разрабочиков</label>
+            <input type="tel" name="tel" id="tel" placeholder="Номер телефона"><br><br>
+            <label for="timer">Время следующего задания</label>
+            <input type="time" name="time" id="timer"><br><br>
+            <label for="link">Ссылка на любимый сайт</label>
+            <input type="url" name="link" id="link" placeholder="https://www.google.com"><br><br>
+            <label for="slider">Выбери число 1-10</label>
+            <input type="range" name="slider" id="slider"><br><br>
+            <label for="picture">Поделится картинко</label>
+            <input type="file" name="picture" id="picture"><br><br>
+        </fieldset><br><br>
+        <fieldset>
+            <legend>Не input-ы</legend><br>
+            <label>Что поесть</label>
+            <select name="product">
+                <option value="">-select product-</option>
+                <option value="яйца">яйца</option>
+                <option value="банан">банан</option>
+                <option value="сыр">сыр</option>
+                <option value="картошка">картошка</option>
+            </select><br><br>
+            <label>Любимые напитки</label>
+            <select size="6" multiple name="Alcohol[]">
+                <optgroup label="Бухлишко">
+                    <option value="c1">Пиво</option>
+                    <option value="c2">Вино</option>
+                    <option value="c3">Мартини</option>
+                </optgroup>
+                <optgroup label="В хлам">
+                    <option value="s1">Ром</option>
+                    <option value="s2">Коньяк</option>
+                    <option value="s3">Вотка</option>
+                </optgroup>
+            </select><br><br>
+            <b>Коментарии на свободную тему</b>
+            <textarea rows="8" cols="45" name="text"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Кнопки</legend>
+            <p style="text-align: left;"><button>Отправить</button> <button>Сбросить</button>
+                <button>Просто кнопка</button> <button disabled>Ой заблокировано(</button>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
